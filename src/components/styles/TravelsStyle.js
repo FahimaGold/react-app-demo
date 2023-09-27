@@ -6,6 +6,7 @@ export const TravelsContainer = styled.div`
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
+  justify-content: center;
   width: 100%;
  
   @media (max-width: 767px) {
@@ -16,4 +17,5 @@ export const TravelsContainer = styled.div`
     height: auto; 
   }
 `;
+
 

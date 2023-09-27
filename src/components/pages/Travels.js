@@ -1,7 +1,8 @@
 import React from 'react';
 import Card from '../Card'
 import data from '../../data'
-import { TravelsContainer } from '../styles/TravelsStyle';
+import { TravelsContainer} from '../styles/TravelsStyle';
+import { HeaderTitle } from '../styles/GlobalStyle';
 
 const Travels = () => {
     const cards = data.map((item) =>{
@@ -14,10 +15,15 @@ const Travels = () => {
         )
     } )
     return (
+        <div>
+             <HeaderTitle>
+            My travels
+            </HeaderTitle>
         <TravelsContainer>
-        <h1>My travels</h1>
+       
            {cards}
            </TravelsContainer>
+           </div>
     )
 };
   
