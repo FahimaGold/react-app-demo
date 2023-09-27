@@ -1,32 +1,23 @@
 import React from 'react';
 import Card from '../Card'
 import data from '../../data'
+import { TravelsContainer } from '../styles/TravelsStyle';
 
 const Travels = () => {
     const cards = data.map((item) =>{
         return (
-            <div style={{display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'stretch',
-            
-            }}>
+           
        <Card key={item.id} 
        {...item}
        />
-       </div>
+      
         )
     } )
     return (
-        <div>
+        <TravelsContainer>
         <h1>My travels</h1>
-        <div style={{
-            display: 'flex',
-            marginRight: '10px',
-        }}> 
-           
            {cards}
-        </div>
-        </div>
+           </TravelsContainer>
     )
 };
   

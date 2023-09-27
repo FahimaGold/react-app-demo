@@ -8,19 +8,13 @@ export const CardContainer = styled.div`
   flex-direction: column;
   align-items: stretch;
   margin: ${px2vw(32)};
-  width: 100%;  
-  @media (max-width: 767px) {
-    flex-direction: column;
-    align-items: stretch;
-    width: 100%; 
-    height: auto; 
-  }
+  width: 100%;
+  height: auto;
 `;
 
 export const Img = styled.img`
 
-  display: flex;
-  flex-direction: row;
+ 
   width: ${px2vw(320)};
   height: ${px2vw(200)};
   
@@ -28,8 +22,7 @@ export const Img = styled.img`
   margin: ${px2vw(20)};
  
   @media (max-width: 767px) {
-    display: flex;
-   flex-direction: column;
+  
     width: 100%; 
     height: auto;
     
