@@ -8,8 +8,13 @@ export const CardContainer = styled.div`
   flex-direction: column;
   align-items: stretch;
   margin: ${px2vw(32)};
-  width: 100%;
+  width: 25%;
   height: auto;
+  @media (max-width: 767px) {
+    width: 100%; 
+    height: auto;
+    
+  }
 `;
 
 export const Img = styled.img`

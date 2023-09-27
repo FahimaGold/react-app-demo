@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const TravelsContainer = styled.div`
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   width: 100%;
