@@ -36,24 +36,3 @@ export const Img = styled.img`
 
   
 `;
-
-
-export const BoxTitle = styled.h3`
-  color: #333;
-  font-size: 2rem;
-  text-align: center;
-
-  @media (min-width: 1024px) {
-    font-size: 1.5rem;
-  }
-`;
-
-export const BoxText = styled.p`
-  margin-top: ${px2vw(20)};
-  color: #666;
-  font-size: 1.5rem;
-
-  @media (min-width: 1024px) {
-    font-size: 1rem;
-  }
-`;
