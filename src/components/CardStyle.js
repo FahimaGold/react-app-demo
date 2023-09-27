@@ -6,6 +6,7 @@ export const CardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
   align-items: stretch;
   margin: ${px2vw(32)};
   width: 25%;
