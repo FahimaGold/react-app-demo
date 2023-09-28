@@ -8,11 +8,16 @@ import Home from './components/pages/Home'
 import About from './components/pages/About'
 import Journal from './components/pages/Travels'
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   // const { isDarkMode, toggleTheme } = useState("");
   return (
     <div className="App">
       <Router>
-      <Navbar/>
+      <Navbar toggleMenu={toggleMenu} isOpen={isMenuOpen} />
       <Routes>
         <Route path='/' exact element={<Home/>} ></Route>
         <Route path='/journal' exact element={<Journal/>} ></Route>

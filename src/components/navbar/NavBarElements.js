@@ -8,8 +8,6 @@ export const Nav = styled.nav`
   justify-content: space-between;
   padding: 0.2rem calc((100vw - 1000px) / 2);
   z-index: 12;
-  /* Third Nav */
-  /* justify-content: flex-start; */
 `;
 export const NavLink = styled(Link)`
 color: #808080;
@@ -27,7 +25,7 @@ cursor: pointer;
 export const Bars = styled(FaBars)`
   display: none;
   color: #808080;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: block;
     position: absolute;
     top: 0;
@@ -42,12 +40,11 @@ export const NavMenu = styled.div`
   display: flex;
   align-items: center;
   margin-right: -24px;
-  /* Second Nav */
-  /* margin-right: 24px; */
-  /* Third Nav */
-  /* width: 100vw;
-  white-space: nowrap; */
-  @media screen and (max-width: 768px) {
-    display: none;
+  @media screen and (max-width: 767px) {
+    display: ${({ isOpen }) => (isOpen ? 'block' : 'none')}; /* Show the menu container when screen width is below 768px if isOpen is true */
+    justifx-content: end;
+    flex-direction: colummn;
+     margin-right: 0;
+   
   }
 `;

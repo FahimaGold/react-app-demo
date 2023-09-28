@@ -4,14 +4,16 @@ import {
     NavLink,
     Bars,
     NavMenu,
+    
   } from './NavBarElements';
-  const Navbar = () => {
+  const Navbar = (props) => {
+    console.log(`checking isOpen ${props.isOpen}`);
     return (
       <>
         <Nav>
-          <Bars />
+          <Bars onClick={props.toggleMenu} />
     
-          <NavMenu>
+          <NavMenu  isOpen={props.isOpen}>
           <NavLink to='/' activestyle="true">
               Home
             </NavLink>
