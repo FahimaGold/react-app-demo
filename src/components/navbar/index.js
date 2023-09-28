@@ -7,7 +7,6 @@ import {
     
   } from './NavBarElements';
   const Navbar = (props) => {
-    console.log(`checking isOpen ${props.isOpen}`);
     return (
       <>
         <Nav>
