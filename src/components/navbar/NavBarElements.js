@@ -20,6 +20,10 @@ cursor: pointer;
 &.active {
   color: #000000;
 }
+
+@media screen and (max-width: 767px) {
+  background: #FFE6E6;
+}
 `;
 
 export const Bars = styled(FaBars)`
@@ -41,10 +45,14 @@ export const NavMenu = styled.div`
   align-items: center;
   margin-right: -24px;
   @media screen and (max-width: 767px) {
+    margin-top: 10%;
+    margin-left: 70%;
+    width: 100%;
+    height: 100%;
     display: ${({ isOpen }) => (isOpen ? 'block' : 'none')}; /* Show the menu container when screen width is below 768px if isOpen is true */
     justifx-content: end;
-    flex-direction: colummn;
-     margin-right: 0;
+    flex-direction: column;
+    z-index: 20;
    
   }
 `;
