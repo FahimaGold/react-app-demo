@@ -6,6 +6,7 @@ import {
     NavMenu,
     
   } from './NavBarElements';
+  import Toggle from "../Toggler";
   const Navbar = (props) => {
     return (
       <>
@@ -23,7 +24,7 @@ import {
               About
             </NavLink>
           </NavMenu>
-
+         <Toggle theme={props.theme} toggleTheme={props.toggleTheme}></Toggle>
         </Nav>
       </>
     );

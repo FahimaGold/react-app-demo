@@ -7,17 +7,27 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/pages/Home'
 import About from './components/pages/About'
 import Journal from './components/pages/Travels'
+import { ThemeProvider } from 'styled-components';
+import { useDarkMode } from './components/hooks/useDarkMode';
+import { darkTheme, lightTheme } from './components/styles/GlobalStyle';
+import { GlobalStyles } from './components/styles/GlobalStyle';
+
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [theme, themeToggler] = useDarkMode();
+  const themeMode = theme === "light"? lightTheme: darkTheme;  
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  // const { isDarkMode, toggleTheme } = useState("");
+
   return (
-    <div className="App">
+    <ThemeProvider theme={themeMode}>
+      <>
+     <GlobalStyles/>
+   
       <Router>
-      <Navbar toggleMenu={toggleMenu} isOpen={isMenuOpen} />
+      <Navbar toggleMenu={toggleMenu} isOpen={isMenuOpen}  theme={theme} toggleTheme={themeToggler} />
       <Routes>
         <Route path='/' exact element={<Home/>} ></Route>
         <Route path='/journal' exact element={<Journal/>} ></Route>
@@ -26,7 +36,9 @@ function App() {
       
       </Router>
       <Footer/>
-    </div>
+   
+    </>
+    </ThemeProvider>
   );
 }
 

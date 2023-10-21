@@ -36,3 +36,10 @@ export const Img = styled.img`
 
   
 `;
+
+export const LocationLink = styled.a`
+color: var(--a-color);
+
+
+
+`

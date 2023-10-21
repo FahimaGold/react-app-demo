@@ -1,7 +1,22 @@
 import styled from "styled-components";
 import px2vw from "../../Utils/px2vw";
+import { createGlobalStyle} from "styled-components"
 
+export const GlobalStyles = createGlobalStyle`
+  body {
+    background: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
+    font-family: Tahoma, Helvetica, Arial, Roboto, sans-serif;
+    transition: all 0.50s linear;
+    --text-color: ${({theme}) => (theme === lightTheme?'#808080':'#fff')};
+    --nav-color: ${({ theme }) => (theme === lightTheme ? '#FFE6E6' : '#292626')};
+    --a-color: ${({ theme }) => (theme === lightTheme ? '#808080' : '#fff')};
+    
 
+  
+  }
+  
+  `
 
 export const HeaderTitle = styled.h1`
   display: 'flex';
@@ -40,15 +55,15 @@ export const PText = styled.p`
   }
 `;
 
+/*** Implementing dark mode  ***/ 
+
 export const lightTheme = {
-  body: '#FFF',
+  body: '#FFFFFF',
   text: '#363537',
-  toggleBorder: '#FFF',
-  background: '#363537',
+ 
 }
 export const darkTheme = {
   body: '#363537',
-  text: '#FAFAFA',
-  toggleBorder: '#6B8096',
-  background: '#999',
+  text: '#FFFFFF',
+  
 }
