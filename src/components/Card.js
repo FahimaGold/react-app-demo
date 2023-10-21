@@ -8,7 +8,7 @@ export default function Card(props){
          <CardContainer >
            <Img src={props.imageUrl}/>
                
-              <span ><FontAwesomeIcon icon={faMapMarkerAlt} size="lg" style={{color: '#F55A5A',}} />&nbsp;&nbsp;&nbsp;{props.location.toUpperCase()}&nbsp;&nbsp;&nbsp;<LocationLink href={props.googleMapsUrl} style={{width: '200px'}}>View on Google Maps</LocationLink></span>
+              <span ><FontAwesomeIcon icon={faMapMarkerAlt} size="lg" style={{color: '#F55A5A', padding: '0 1em', marginLeft: "10%"}} />&nbsp;&nbsp;&nbsp;{props.location.toUpperCase()}&nbsp;&nbsp;&nbsp;<LocationLink href={props.googleMapsUrl} style={{width: '200px'}}>View on Google Maps</LocationLink></span>
                <HeaderTitle>
                 {props.title}
                 </HeaderTitle>
