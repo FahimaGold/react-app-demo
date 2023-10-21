@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { CardContainer, Img, LocationLink, LocationIcon} from './CardStyle'
 import { HeaderTitle, H3Title, PText } from './styles/GlobalStyle'
