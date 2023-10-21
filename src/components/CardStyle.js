@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import px2vw from "../Utils/px2vw";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
 export const CardContainer = styled.div`
   display: flex;
@@ -40,6 +41,14 @@ export const Img = styled.img`
 export const LocationLink = styled.a`
 color: var(--a-color);
 
-
-
 `
+
+
+export const LocationIcon = styled(FontAwesomeIcon)`
+  icon: ${faMapMarkerAlt};
+  size=lg;
+  color: #F55A5A;
+  padding: 0 1em;
+  margin-left: 10%;
+  }
+`;
