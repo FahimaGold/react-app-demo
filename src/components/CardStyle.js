@@ -46,9 +46,10 @@ color: var(--a-color);
 
 export const LocationIcon = styled(FontAwesomeIcon)`
   icon: ${faMapMarkerAlt};
-  size=lg;
+  size: lg;
   color: #F55A5A;
   padding: 0 1em;
   margin-left: 10%;
+
   }
 `;
