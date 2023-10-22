@@ -4,6 +4,7 @@ This react app is a demo for the following:
 
 - Using styled components
 - Creating dark mode using [`ThemeProvider`](https://styled-components.com/docs/advanced#theming) wrapper component. 
+- The theme is saved in the browser local storage.
 - Using a custom hook to create the dark mode `useDarkMode`.
 - Using [`flexbox`](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox) in css.
 - This app is responsive.
