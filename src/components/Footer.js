@@ -5,7 +5,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { AppFooter, FooterIcon } from "./FooterStyle"
+import { AppFooter, FooterIcon } from "./styles/FooterStyle"
 
 export default function Footer(){
     return(

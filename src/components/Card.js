@@ -1,5 +1,5 @@
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
-import { CardContainer, Img, LocationLink, LocationIcon} from './CardStyle'
+import { CardContainer, Img, LocationLink, LocationIcon} from './styles/CardStyle'
 import { HeaderTitle, H3Title, PText } from './styles/GlobalStyle'
 export default function Card(props){
     return(

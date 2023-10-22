@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import px2vw from "../Utils/px2vw";
+import px2vw from "../../Utils/px2vw";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
