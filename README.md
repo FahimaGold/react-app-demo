@@ -10,6 +10,7 @@ This react app is a demo for the following:
 - This app is responsive.
 
 # Demo
+![react_dark_theme](https://github.com/FahimaGold/react-app-demo/assets/13876176/8758c808-3df6-42c9-841e-0c8e04aa72eb)
 
 
 # This app was created using Create React App
