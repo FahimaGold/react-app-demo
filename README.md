@@ -8,6 +8,10 @@ This react app is a demo for the following:
 - Using a custom hook to create the dark mode `useDarkMode`.
 - Using [`flexbox`](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox) in css.
 - This app is responsive.
+
+# Demo
+
+
 # This app was created using Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
