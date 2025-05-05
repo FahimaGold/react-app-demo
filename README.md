@@ -43,7 +43,7 @@ This is a demo React application that showcases the implementation of dark mode 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/react-app-demo.git
+git clone https://github.com/FahimaGold/react-app-demo.git
 cd react-app-demo
 ```
 
