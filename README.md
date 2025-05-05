@@ -1,29 +1,68 @@
-# About this React App
+# 🌙 React dark theme demo 🌙
 
-This react app is a demo for the following:
+This is a demo React application that showcases the implementation of dark mode with Styled Components and localStorage for theme persistence. The app provides a clean and responsive design with a modern UI, using Flexbox for layout management
 
-- **Styled Components:** Uses styled-components for modular, scoped CSS-in-JS styling.
-- **Dark Mode Support:** Implements light and dark themes using [`ThemeProvider`](https://styled-components.com/docs/advanced#theming) wrapper component. 
-- **Theme Persistence:** The theme is saved in the browser local storage.
-- **Custom Hook**: Using a custom hook `useDarkMode` to create the dark mode. 
-- **Modern CSS:** Utilizes Flexbox layout for a clean and flexible UI structure.
-- **Responsive Design:** Built with Flexbox and media queries to adapt across devices.
+---
 
-# Demo
+## 🚀 Features
+- **Styled Components**: Uses styled-components for modular, scoped CSS-in-JS styling.
+- **Dark Mode Support**: Implements light and dark themes using the  [`ThemeProvider`](https://styled-components.com/docs/advanced#theming) wrapper component.
+- **Theme Persistence**: The selected theme is saved in the browser's `localStorage`, making it persistent across page reloads.
+- **Custom Hook**: A custom hook `useDarkMode` manages dark mode state and theme switching.
+- **Modern CSS**: Utilizes Flexbox layout for a clean and flexible UI structure.
+- **Responsive Design**: Adapts to different screen sizes using Flexbox and media queries.
+- 
+---
+
+## 🛠️ **Tech Stack**
+
+| Technology           | Purpose                             |
+|----------------------|-------------------------------------|
+| **React**            | Frontend framework                  |
+| **Styled Components**| CSS-in-JS styling library           |
+| **localStorage**     | For theme persistence               |
+| **Flexbox**          | Layout design                       |
+
+
+## Demo
 ![react_dark_theme](https://github.com/FahimaGold/react-app-demo/assets/13876176/8758c808-3df6-42c9-841e-0c8e04aa72eb)
 
+---
+## 📐 **App Structure**
 
-# This app was created using Create React App
+### **Dark Mode**
+- **ThemeProvider**: A wrapper component that provides theme values to the app.
+- **useDarkMode**: Custom hook for handling dark mode toggling and saving the state to `localStorage`.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### **Responsive Design**
+- Uses **Flexbox** layout to create a flexible and adaptable design that works on mobile and desktop devices.
 
+---
+## ⚙️ **Setup Instructions**
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/react-app-demo.git
+cd react-app-demo
+```
+
+### 2. Install dependencies
+
+`npm install`
+
+### 3. Run the app
+
+`npm start`
+
+---
 ## Available Scripts
 
 In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
@@ -60,26 +99,5 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
