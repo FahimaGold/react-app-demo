@@ -37,7 +37,7 @@ This is a demo React application that showcases the implementation of dark mode 
 ### **Responsive Design**
 - Uses **Flexbox** layout to create a flexible and adaptable design that works on mobile and desktop devices.
 
----
+
 ## ⚙️ **Setup Instructions**
 
 ### 1. Clone the repository
@@ -55,7 +55,6 @@ cd react-app-demo
 
 `npm start`
 
----
 ## Available Scripts
 
 In the project directory, you can run:
